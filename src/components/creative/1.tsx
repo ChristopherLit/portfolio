@@ -32,8 +32,8 @@ export default function Animation() {
         {/* Text Content */}
         <div className="z-10 max-w-lg text-white text-left">
           <h1 className="text-6xl font-bold leading-tight">
-            Turning <span className="text-blue-400">concepts</span> into <br />
-            <span>works of art.</span>
+            Favourite <span className="text-blue-400">clips</span> from
+            <span> my films.</span>
           </h1>
         </div>
       </div>
