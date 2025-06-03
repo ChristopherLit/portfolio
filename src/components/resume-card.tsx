@@ -100,7 +100,16 @@ export const ResumeCard = ({
               }}
               className="mt-2 text-xs sm:text-sm"
             >
-              {description}
+              {description
+                .split(".")
+                .map((sentence, index) =>
+                  sentence.trim() ? (
+                    <React.Fragment key={index}>
+                      <p>{sentence.trim()}.</p>
+                      <br />
+                    </React.Fragment>
+                  ) : null
+                )}
             </motion.div>
           )}
         </div>

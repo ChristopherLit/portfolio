@@ -32,7 +32,7 @@ export const DATA = {
       start: "January 2025",
       end: "April 2025",
       description:
-        "Built an ETL pipeline in Python and Logstash to process 100K+ data points into Elasticsearch, enabling 10+ teams to visualize performance bottlenecks. Improved query speed by 21% by cleaning 4,300+ test records using C# and SQL. Proposed and led AHP-based scoring for test results, cutting false negatives by 43% and saving 2+ hours/week.",
+        "Built an ETL pipeline in Python and Logstash to process 100K+ data points into Elasticsearch, enabling 10+ teams to visualize performance bottlenecks on Grafana. Improved query speed by 21% by cleaning 4,300+ test records using C# and SQL. Proposed and led AHP-based scoring for test results, cutting false negatives by 43% and saving 2+ hours/week.",
     },
     {
       company: "CEED",
@@ -77,11 +77,13 @@ export const DATA = {
           href: "https://covara.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
+        /*
         {
           type: "Source",
           href: "https://github.com/ProjectCovara/covara-web",
           icon: <Icons.github className="size-3" />,
         },
+        */
       
       ],
       image: "",
