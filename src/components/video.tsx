@@ -40,7 +40,7 @@ export default function Video() {
                 style={{ scale }}
                 className="text-9xl font-bold tracking-tighter sm:text-6xl text-white"
               >
-                Here's some of my favourite work
+                Here&apos;s some of my favourite work
               </motion.p>
             )
           }}
