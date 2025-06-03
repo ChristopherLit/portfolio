@@ -28,7 +28,7 @@ export default function Contact() {
             Contact
           </div>
           <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <p className="mx-auto max-w-[600px] text-gray-500 md:text-lg/relaxed">
             Have a project in mind or just want to say hi? Feel free to reach out through any of the platforms below.

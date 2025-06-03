@@ -5,7 +5,7 @@ import { BlackToWhiteGradient, WhiteToBlackGradient } from "./creative/gradient"
 import { TextAnimate } from "./magicui/text-animate";
 import { StickyTextCenter, StickyTextLeft } from "./stick-text";
 import { motion, useTransform } from "framer-motion";
-import { scale } from "motion/react";
+import ScalingText from "./scalingText";
 
 export default function Video() {
   return (
@@ -26,26 +26,17 @@ export default function Video() {
             delay={0.4}
             className="text-3xl font-bold tracking-tighter sm:text-5xl text-white ml-8"
           >
-           My other passion is cinematography. This is where I use light, framing, and colour grading to bring my ideas to life.
+            My other passion is cinematography. This is where I use light, framing, and colour grading to bring my ideas to life.
           </TextAnimate>
         </StickyTextLeft>
 
         <div className="h-[35vh] w-full flex items-center justify-center" />
 
         <StickyTextCenter stickyDistance={1}>
-          {(scrollYProgress) => {
-            const scale = useTransform(scrollYProgress, [0, 1], [1, 0.7]) // Shrink from 100% to 70%
-            return (
-              <motion.p
-                style={{ scale }}
-                className="text-9xl font-bold tracking-tighter sm:text-6xl text-white"
-              >
-                Here's some of my favourite work
-              </motion.p>
-            )
-          }}
+          {(scrollYProgress) => (
+            <ScalingText scrollYProgress={scrollYProgress} />
+          )}
         </StickyTextCenter>
-
 
         <div className="h-[60vh] w-full flex items-center justify-center" />
 
