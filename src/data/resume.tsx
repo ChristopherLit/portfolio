@@ -87,7 +87,7 @@ export const DATA = {
       
       ],
       image: "",
-      video: "covara_video.mp4",
+      video: "https://videos.christopherlit.com/covara_video.mp4",
     },
     {
       title: "MediHub",
@@ -110,7 +110,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "medihub_video.mp4",
+        "https://videos.christopherlit.com/medihub_video.mp4",
     },
     {
       title: "Ksolver",
@@ -131,7 +131,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "kmap_video.mp4",
+      video: "https://videos.christopherlit.com/kmap_video.mp4",
     },
     {
       title: "Blackjack",
@@ -154,7 +154,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "blackjack_video.mp4",
+        "https://videos.christopherlit.com/blackjack_video.mp4",
     },
   ],
 
