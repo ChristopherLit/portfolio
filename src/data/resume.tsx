@@ -55,7 +55,7 @@ export const DATA = {
       degree: "Bachelor's Degree of Computer Science",
       logoUrl: "uottawa_logo_education.png",
       start: "2022",
-      end: "2026",
+      end: "2027",
     }
   ],
   projects: [
