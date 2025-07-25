@@ -11,14 +11,15 @@ export const DATA = {
   avatarUrl: "/me.jpg",
   skills: [
   "Java",
+  "Python",
   "C++",
   "C#",
-  "Python",
   "React",
   "TypeScript",
   "JavaScript",
+  "C++",
   "PostgreSQL",
-  "Node.js"
+  "Docker",
 ],
 
   work: [
