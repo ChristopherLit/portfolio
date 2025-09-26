@@ -11,18 +11,28 @@ export const DATA = {
   avatarUrl: "/me.jpg",
   skills: [
   "Java",
-  "Python",
-  "C++",
-  "C#",
-  "React",
   "TypeScript",
   "JavaScript",
-  "C++",
+  "Python",
+  "C#",
+  "React",
   "PostgreSQL",
   "Docker",
 ],
 
   work: [
+      {
+      company: "Entrust",
+      href: "https://www.entrust.com/",
+      badges: [],
+      location: "Hybrid",
+      title: "Software Engineer Intern",
+      logoUrl: "entrust_logo.png",
+      start: "September 2025",
+      end: "Present",
+      description:
+        "Identity and Security Team",
+    },
     {
       company: "Kinaxis",
       href: "https://www.kinaxis.com/",
