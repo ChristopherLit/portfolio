@@ -29,7 +29,7 @@ export const DATA = {
       title: "Software Engineer Intern",
       logoUrl: "entrust_logo.png",
       start: "September 2025",
-      end: "Present",
+      end: "December 2025",
       description:
         "Identity and Security Team",
     },
