@@ -21,6 +21,18 @@ export const DATA = {
 ],
 
   work: [
+       {
+      company: "Acephalt",
+      href: "https://www.acephalt.com/",
+      badges: [],
+      location: "In-person",
+      title: "CTO",
+      logoUrl: "acephalt_logo.png",
+      start: "January 2026",
+      end: "Present",
+      description:
+        "AI due diligence platform. Raised $150,000 in angel investments. Built the whole product",
+    },
       {
       company: "Entrust",
       href: "https://www.entrust.com/",
