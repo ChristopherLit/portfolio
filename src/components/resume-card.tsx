@@ -31,29 +31,38 @@ export const ResumeCard = ({
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (description) {
-      e.preventDefault();
-      setIsExpanded(!isExpanded);
-    }
-  };
-
   return (
-    <Link
-      href={href || "#"}
+    <div
       className="block cursor-pointer"
-      onClick={handleClick}
+      onClick={() => {
+        if (description) {
+          setIsExpanded(!isExpanded);
+        }
+      }}
     >
       <Card className="flex">
         <div className="flex-none">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
-            <AvatarImage
-              src={logoUrl}
-              alt={altText}
-              className="object-contain"
-            />
-            <AvatarFallback>{altText[0]}</AvatarFallback>
-          </Avatar>
+          {href ? (
+            <Link href={href} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+              <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+                <AvatarImage
+                  src={logoUrl}
+                  alt={altText}
+                  className="object-contain"
+                />
+                <AvatarFallback>{altText[0]}</AvatarFallback>
+              </Avatar>
+            </Link>
+          ) : (
+            <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+              <AvatarImage
+                src={logoUrl}
+                alt={altText}
+                className="object-contain"
+              />
+              <AvatarFallback>{altText[0]}</AvatarFallback>
+            </Avatar>
+          )}
         </div>
         <div className="flex-grow ml-4 items-center flex-col group">
           <CardHeader>
@@ -114,6 +123,6 @@ export const ResumeCard = ({
           )}
         </div>
       </Card>
-    </Link>
+    </div>
   );
 };
